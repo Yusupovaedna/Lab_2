@@ -70,7 +70,7 @@
     <tr>
         <td>Введите Y:</td>
         <td colspan="3"><input required name="Y-input" class="illuminated animated" type="text"
-                               placeholder="значение в промежутке (-5 до 5)" maxlength="6"></td>
+                               placeholder="от -5 до 5" maxlength="6"></td>
     </tr>
     <tr>
         <td rowspan="2">Выберите R: </td>
