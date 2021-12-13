@@ -29,16 +29,6 @@ document.getElementById("checkButton").onclick = function () {
 function sendRequest(key) {
     const keys = ["button", "svg"];
     if (keys.includes(key)) {
-        let request = "x=" + encodeURIComponent(x) + "&y=" + encodeURIComponent(y) + "&r=" + encodeURIComponent(r) +
-                "&key=" + encodeURIComponent(key);
-        // fetch("app", {
-        //     method: "GET",
-        //     headers: {"Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"},
-        //     body: request
-        // }).then(response => response.text()).then(function (serverAnswer) {
-        //     document.getElementById("outputContainer").innerHTML = serverAnswer;
-        // }).catch(err => createNotification(`Ошибка HTTP ${err.textContent}. Повторите попытку позже.`));
-
 
         fetch("./app?x=" + encodeURI(x) + "&y=" + encodeURI(y) + "&r=" + encodeURI(r) + "&key=" + encodeURI(key), {
             method: 'GET',
@@ -82,7 +72,7 @@ function validateY() {
     } else if (!isNumeric(y)) {
         createNotification("y не число");
         return false;
-    } else if (!((y > -5) && (y < 5))) {
+    } else if (!((y >= -5) && (y <= 5))) {
         createNotification("y не входит в область допустимых значений");
         return false;
     } else return true;

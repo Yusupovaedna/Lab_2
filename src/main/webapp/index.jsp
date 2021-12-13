@@ -3,8 +3,16 @@
 <html>
 <head>
     <title>Лабораторная №2</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
+<header>
+    Карандашева Надежда, Юсупова Эдна<br>
+    Группа P33202<br>
+    Вариант: 198421
+</header>
 <table id="mainTable" class="shaded">
     <thead>
     <td colspan="5"><h3>Валидация введённых значений:</h3></td>
@@ -17,6 +25,16 @@
     </tr>
     <tr>
         <td rowspan="3">Выберите X:</td>
+    <tr>
+        <td><input type="radio" name="X-button" value="-5"  checked="checked"/>-5</td>
+        <td><input type="radio" name="X-button" value="-4"/>-4</td>
+        <td><input type="radio" name="X-button" value="-3"/>-3</td>
+    </tr>
+    <tr>
+        <td><input type="radio" name="X-button" value="-2"/>-2</td>
+        <td><input type="radio" name="X-button" value="-1"/>-1</td>
+        <td><input type="radio" name="X-button" value="0"/>0</td>
+    </tr>
         <td rowspan="6">
             <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300">
                 <%--                figures--%>
@@ -51,16 +69,7 @@
             </svg>
         </td>
     </tr>
-    <tr>
-        <td><input type="radio" name="X-button" value="-5"/>-5</td>
-        <td><input type="radio" name="X-button" value="-4"/>-4</td>
-        <td><input type="radio" name="X-button" value="-3"/>-3</td>
-    </tr>
-    <tr>
-        <td><input type="radio" name="X-button" value="-2"/>-2</td>
-        <td><input type="radio" name="X-button" value="-1"/>-1</td>
-        <td><input type="radio" name="X-button" value="0"/>0</td>
-    </tr>
+
     <tr>
         <td><input type="radio" name="X-button" value="1"/>1</td>
         <td><input type="radio" name="X-button" value="2"/>2</td>
@@ -76,7 +85,7 @@
         <td rowspan="2">Выберите R: </td>
         <br>
 
-        <td><input name="radius" type="button" class="illuminated animated" value="1"></td>
+        <td><input name="radius" type="button" class="illuminated animated" value="1" ></td>
         <td><input name="radius" type="button" class="illuminated animated" value="1.5"></td>
         <td><input name="radius" type="button" class="illuminated animated" value="2"></td>
         <td><input name="radius" type="button" class="illuminated animated" value="2.5"></td>
@@ -110,7 +119,6 @@
     }).catch(err => createNotification(`Ошибка HTTP ${err.textContent}. Повторите попытку позже.`));
 </script>
 <script src="scripts/validator.js"></script>
-<script src="scripts/easter_egg.js"></script>
 <script src="scripts/graph_drawer.js"></script>
 
 </body>

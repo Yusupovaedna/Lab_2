@@ -1,0 +1,41 @@
+body{
+    margin: 50px;
+    text-align: center;
+    font-family: "Calibri Light", serif;
+}
+header{
+    font-family: Serif, serif;
+    font-size: 20px;
+    color: #332d2d;
+    background: #d2e7f8;
+    border-radius: 20px;
+    padding: 20px;
+}
+.task{
+    text-align: left;
+}
+table{
+    margin: auto;
+}
+canvas {
+    border: 1px solid black;
+}
+iframe{
+    width: 1200px;
+    border: none;
+    text-align: center;
+}
+
+.resultTab {
+    padding: 20px;
+
+}
+.resultTab td{
+    text-align: center;
+    padding: 10px;
+}
+
+.error{
+    background-color: #ffe1ec;
+    border-radius: 20px;
+}
