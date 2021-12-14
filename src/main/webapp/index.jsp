@@ -14,9 +14,6 @@
     Вариант: 198421
 </header>
 <table id="mainTable" class="shaded">
-    <thead>
-    <td colspan="5"><h3>Валидация введённых значений:</h3></td>
-    </thead>
     <tbody>
     <tr>
         <td colspan="5">
